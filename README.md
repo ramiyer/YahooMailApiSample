@@ -16,11 +16,11 @@ GetUserData_request=GetUserData,[{}]
 RemoveFolder_request=RemoveFolder,[{"fid":"TestFolder"}]
 
 sendmessage.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test@yahoo.com","name":"SendMessage Test User"},
-                    "from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":{"email":"test@yahoo.com",
-                    "name":"SendMessage Test User"},"inreplyto":"SendMessage InReplyTo Value","mailer":"YahooMailRC","subject":"Message with Stationery",
-                    "simplebody":{"text":"Let it snow.  Let it snow. Let it snow.\\nLet\\nit snow. Let it snow\\nLet it snow.  Let it snow. Let it sn\\now.",
-                    "html":"<HTML><body><table background='cid:1163454322\\n7@dclient.mail.yahoo.com'><tr><td><font color='#000000'>Let it snow<br>Let it snow<br>
-	       			<br>\\n<\\\/font><\\\/td><\\\/tr><\\\/table><\\\/body><\\\/HTML>"}}}]}
+"from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":{"email":"test@yahoo.com","name":"SendMessage Test User"},
+"inreplyto":"SendMessage InReplyTo Value","mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow.
+Let it snow. Let it snow.\\nLet\\nit snow. Let it snow\\nLet it snow.  Let it snow. Let it sn\\now.",
+"html":"<HTML><body><table background='cid:1163454322\\n7@dclient.mail.yahoo.com'><tr><td><font color='#000000'>Let it snow<br>Let it snow<br>
+br>\\n<\\\/font><\\\/td><\\\/tr><\\\/table><\\\/body><\\\/HTML>"}}}]}
 
 listfolders.request={"method":"ListFolders","params":[{}]}
 
@@ -42,7 +42,8 @@ emptyfolder.request={"method":"EmptyFolder","params":[{"fid":"test"}]}
 
 deletemessages.request={"method":"DeleteMessages","params":[{"fid":"TestFolder","selection":{}}]}
 
-getmessagerawheader.request={"method":"GetMessageRawHeader","params":[{"fid":"Inbox","mid":["1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M","1_303_AKSCiGIAAMX7SxWTUAy1l2Krl1M","1_584_AKSCiGIAAMzCSxWTUQKjHTG7Hp0","1_865_AKSCiGIAAMk7SxWTUQcOHjG7Hp0","1_1146_AKSCiGIAAMk8SxWTUQt\\\/NjG7Hp0","1_1427_AKSCiGIAAMXtSxWTUgE+2UoJZ40","1_1708_AKSCiGIAAMX9SxWTUgVfXUoJZ40","1_1989_AKSCiGIAANdWSxWTUgpuIkoJZ40","1_2270_AKSCiGIAAMX3SxWTUwA53nzIkbs","1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY"]}]}
+getmessagerawheader.request={"method":"GetMessageRawHeader","params":[{"fid":"Inbox","mid":["1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M",
+"1_1989_AKSCiGIAANdWSxWTUgpuIkoJZ40","1_2270_AKSCiGIAAMX3SxWTUwA53nzIkbs","1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY"]}]}
 
 searchmessages.request={"method":"SearchMessages","params":[{"search":{"fid":"Inbox","query":"the"},"numInfo":2000,"numMid":2000,"sortKey":"date","sortOrder":"up"}]}
 
