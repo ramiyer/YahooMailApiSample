@@ -18,9 +18,13 @@ RemoveFolder_request=RemoveFolder,[{"fid":"TestFolder"}]
 sendmessage.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test@yahoo.com","name":"SendMessage Test User"},"from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":{"email":"test@yahoo.com","name":"SendMessage Test User"},"inreplyto":"SendMessage InReplyTo Value","mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow.  Let it snow. Let it snow.\\nLet\\nit snow. Let it snow\\nLet it snow.  Let it snow. Let it sn\\now.","html":"<HTML><body><table background='cid:1163454322\\n7@dclient.mail.yahoo.com'><tr><td><font color='#000000'>Let it snow.Let it snow<br>Let it snow.\\n Let it snow. Let it snow<br>Let it snow. Let it snow. Let it snow<br>Let it snow. Let it snow. Let it snow<br>\\n<\\\/font><\\\/td><\\\/tr><\\\/table><\\\/body><\\\/HTML>"}}}]}
 
 listfolders.request={"method":"ListFolders","params":[{}]}
+
 listmessages.request={"method":"ListMessages","params":[{"fid":"Inbox","numInfo":25,"numMid":25,"sortKey":"date","sortOrder":"up","groupBy":"unRead"}]}
+
 flagmessages.request={"method":"FlagMessages","params":[{"fid":"Inbox","selection":{},"setFlags":{"read":1}}]}
+
 movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"Inbox","destinationFid":"perfTestFolder","selection":{}}]}
+
 movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"perfTestFolder","destinationFid":"Inbox","selection":{}}]}
 
 savemessage.request={"method":"SaveMessage","params":[{"destination":{"fid":"Inbox"},"message":{"to":{"email":"test34@yahoo.com","name":"SaveMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SaveMessage Test User"},"replyto":{"email":"test34@yahoo.com","name":"SaveMessage Test User"},"inreplyto":"SaveMessage InReplyTo Value","subject":"SaveMessage Folder Test","body":{"data":"This is a test. <IMG src=\\\"http:\\\/\\\/us.i1.yimg.com\\\/us.yimg.com\\\/i\\\/mesg\\\/tsmileys2\\\/40.gif\\\">","type":"text","subtype":"html","charset":"us-ascii"}}}]}
