@@ -41,7 +41,6 @@ public class YahooMail {
 	private static Properties jsonProps = null;
 	private static Properties appProps = null;
 	
-	private static String logFileName = "YMail";
 	private static String pwd = System.getProperty("user.dir");
 	
 	public static Properties loadJsonProperties() {
@@ -191,7 +190,7 @@ public class YahooMail {
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpResponse response = httpClient.execute(request);
                     // JSON object to hold the information, which is sent to the server
-                    JSONObject jsonObjRecv = MakeRequest.parseResponse(response);
+                    JSONObject jsonObjRecv = ReadResponse.parseResponse(response);
                     if (jsonObjRecv != null) { 
         		        //Printing out the response
         		      //  System.out.println("JSON output is" +jsonObjRecv.toString(1));
@@ -259,7 +258,7 @@ public class YahooMail {
 		        HttpClient httpClient = new DefaultHttpClient();
 		        HttpResponse response = httpClient.execute(request);
 		        // JSON object to hold the information, which is sent to the server
-		        JSONObject jsonObjRecv = MakeRequest.parseResponse(response);
+		        JSONObject jsonObjRecv = ReadResponse.parseResponse(response);
 		        if (jsonObjRecv != null) { 
 		        //Printing out the response
 		        	System.out.println("JSON output is" +jsonObjRecv.toString(1));
