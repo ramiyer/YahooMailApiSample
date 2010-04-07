@@ -17,10 +17,9 @@ RemoveFolder_request=RemoveFolder,[{"fid":"TestFolder"}]
 
 sendmessage.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test@yahoo.com","name":"SendMessage Test User"},
 "from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":{"email":"test@yahoo.com","name":"SendMessage Test User"},
-"inreplyto":"SendMessage InReplyTo Value","mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow.
-Let it snow. Let it snow.\\nLet\\nit snow. Let it snow\\nLet it snow.  Let it snow. Let it sn\\now.",
-"html":"<HTML><body><table background='cid:1163454322\\n7@dclient.mail.yahoo.com'><tr><td><font color='#000000'>Let it snow<br>Let it snow<br>
-br>\\n<\\\/font><\\\/td><\\\/tr><\\\/table><\\\/body><\\\/HTML>"}}}]}
+"inreplyto":"SendMessage InReplyTo Value","mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow\\n.",
+"html":"<HTML><body><table background='cid:1163454322\\n7@dclient.mail.yahoo.com'><tr><td><font color='#000000'>Let it snow<br><\\\/font>
+<\\\/td><\\\/tr><\\\/table><\\\/body><\\\/HTML>"}}}]}
 
 listfolders.request={"method":"ListFolders","params":[{}]}
 
