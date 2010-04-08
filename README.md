@@ -64,8 +64,7 @@ batchexecute.request={"method":"BatchExecute","params":[{"call":[{"GetUserData":
 sendmessageattachment.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test34@yahoo.com",<br>
 "name":"SendMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SendMessage Attach Test User"},"replyto":{"email":"test34@yahoo.com",<br>
 "name":"SendMessage Attach Test User"},"mailer":"YahooMailRC\\\/MailBeta YahooMailWebService\\\/V1",
-"simplebody":{"text":"SendMessage with message with one attachment FILENAME",
-"attachment":[{"attachment":"upload:\\\/\\\/XXXXXXXXXX"}]},"subject":"SendMessage with an attachment"}}]}
+"simplebody":{"text":"SendMessage with message with one attachment FILENAME", "attachment":[{"attachment":"upload:\\\/\\\/XXXXXXXXXX"}]},<br>"subject":"SendMessage with an attachment"}}]}
 
 #Note on Licenses
 
