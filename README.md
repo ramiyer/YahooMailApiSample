@@ -1,11 +1,11 @@
 #Overview
 
-YahooMailApiSample is a tool which developers can use to run various YMWS API's [Yahoo Mail web service](http://developer.yahoo.com/mail/).
+YahooMailApiSample is a tool which developers can use to run various [Yahoo Mail web service](http://developer.yahoo.com/mail/) API's.
 The tool uses Signpost OAuth library. For more information on OAuth refer [http://oauth.net](http://oauth.net) and for how Yahoo implements it refer [http://developer.yahoo.com/oauth/](http://developer.yahoo.com/oauth/).
 
 #Code
 
-<b>YahooMail.java</b> : The main java file which does the job is YahooMail.java. It creates an OAuth request using Signpost APIs and sends it to the [JSON-RPC](http://mail.yahooapis.com/ws/mail/v1.1/jsonrpc) endpoint. The response is printed out and is also written to a log file. The code also uses [org.json](http://json.org/) library for encoding and decoding json objects.    
+<b>YahooMail.java</b> : The main java file which does the job is YahooMail.java. It creates an OAuth request using Signpost APIs and sends it to the JSON-RPC (http://mail.yahooapis.com/ws/mail/v1.1/jsonrpc) endpoint. The response is printed out and is also written to a log file. The code also uses [org.json](http://json.org/) library for encoding and decoding json objects.    
 
 <b>com.centerkey.utils.BareBonesBrowserLaunch.java</b>: Launches the browser for OAuth authorization.
 
