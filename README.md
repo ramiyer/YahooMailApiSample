@@ -23,9 +23,7 @@ sendmessage.request={"method":"SendMessage","params":[{"savecopy":true,"message"
 "name":"SendMessage Test User"},"from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":
 {"email":"test@yahoo.com","name":"SendMessage Test User"},"inreplyto":"SendMessage InReplyTo Value",
 "mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow\\n",
-<MTMarkdownOptions output='raw'>
-"html":"<html><body></body></html>"}}}]}
-</MTMarkdownOptions>
+"html":"your html page"}}}]}
 
 listfolders.request={"method":"ListFolders","params":[{}]}
 
