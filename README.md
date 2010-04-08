@@ -62,9 +62,10 @@ setuserdata.request={"method":"SetUserData","params":[{"setdata":{"userUIPref":{
 batchexecute.request={"method":"BatchExecute","params":[{"call":[{"GetUserData":{}},{"ListMessages":{"fid":"Inbox","startInfo":0,"startMid":0,"numInfo":50,"numMid":50,"sortKey":"date","sortOrder":"down","verifyInAddressBook":1,"filterBy":[{"isRead":1}]}},{"GetMboxColoMigrate":{"loginip":"207.126.231.85"}},{"GetMetaData":{}},{"ListFolders":{"resetMessengerUnseen":1}}]}]}
 
 sendmessageattachment.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test34@yahoo.com",<br>
-"name":"SendMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SendMessage Attach Test User"},"replyto":{"email":"test34@yahoo.com",<br>
-"name":"SendMessage Attach Test User"},"mailer":"YahooMailRC\\\/MailBeta YahooMailWebService\\\/V1",
-"simplebody":{"text":"SendMessage with message with one attachment FILENAME", "attachment":[{"attachment":"upload:\\\/\\\/XXXXXXXXXX"}]},<br>"subject":"SendMessage with an attachment"}}]}
+"name":"SendMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SendMessage Attach Test User"},<br>
+"replyto":{"email":"test34@yahoo.com", "name":"SendMessage Attach Test User"},"mailer":"YahooMailRC\\\/MailBeta YahooMailWebService\\\/V1",<br>
+"simplebody":{"text":"SendMessage with message with one attachment FILENAME", "attachment":[{"attachment":"upload:\\\/\\\/XXXXXXXXXX"}]},<br>
+"subject":"SendMessage with an attachment"}}]}
 
 #Note on Licenses
 
