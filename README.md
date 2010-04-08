@@ -37,12 +37,10 @@ movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"Inbox","de
 
 movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"perfTestFolder","destinationFid":"Inbox","selection":{}}]}
 
-<MTMarkdownOptions output='raw'>
-savemessage.request={"method":"SaveMessage","params":[{"destination":{"fid":"Inbox"},"message":{"to":{"email":"test34@yahoo.com",
-"name":"SaveMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SaveMessage Test User"},"replyto":{"email":"test34@yahoo.com",
-"name":"SaveMessage Test User"},"inreplyto":"SaveMessage InReplyTo Value","subject":"SaveMessage Folder Test","body":{"data":"This is a test.
-<IMG src=\\\"http:\\\/\\\/us.i1.yimg.com\\\/us.yimg.com\\\/i\\\/mesg\\\/tsmileys2\\\/40.gif\\\">","type":"text","subtype":"html","charset":"us-ascii"}}}]}
-</MTMarkdownOptions>
+savemessage.request={"method":"SaveMessage","params":[{"destination":{"fid":"Inbox"},"message":{"to":{"email":"test34@yahoo.com",<br>
+"name":"SaveMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SaveMessage Test User"},"replyto":{"email":"test34@yahoo.com",<br>
+"name":"SaveMessage Test User"},"inreplyto":"SaveMessage InReplyTo Value","subject":"SaveMessage Folder Test",
+"body":{"data":"This is a test.","type":"text","subtype":"html","charset":"us-ascii"}}}]}
 
 getmessage.request={"method":"GetMessage","params":[{"fid":"Inbox","message":[{"blockImages":"none","mid":"1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_303_AKSCiGIAAMX7SxWTUAy1l2Krl1M","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_584_AKSCiGIAAMzCSxWTUQKjHTG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_865_AKSCiGIAAMk7SxWTUQcOHjG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1146_AKSCiGIAAMk8SxWTUQt\\\/NjG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1427_AKSCiGIAAMXtSxWTUgE+2UoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1708_AKSCiGIAAMX9SxWTUgVfXUoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1989_AKSCiGIAANdWSxWTUgpuIkoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_2270_AKSCiGIAAMX3SxWTUwA53nzIkbs","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true}]}]}
 
