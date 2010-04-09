@@ -22,7 +22,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	      "name": "TestFolder"
 	    }
 	  ]
-	}<br>
+	}
 	
     GetUserData_request={
 	  "method": GetUserData,
@@ -30,7 +30,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	    {
    		}
 	  ]
-	}<br>
+	}
     
     RemoveFolder_request={
 	  "method": RemoveFolder,
@@ -39,7 +39,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	      "fid": "TestFolder"
 	    }
 	  ]
-	}<br>
+	}
 
     
     listfolders.request={
@@ -79,7 +79,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	      }
 	    }
 	  ]
-	}<br>
+	}
 
     listmessages.request={
 	  "method": "ListMessages",
@@ -93,7 +93,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	      "groupBy": "unRead"
 	    }
 	  ]
-	}<br>
+	}
 
     flagmessages.request={
 	  "method": "FlagMessages",
@@ -108,7 +108,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	      }
 	    }
 	  ]
-	}<br>
+	}
 
     movemessages.request={
 	  "method": "MoveMessages",
