@@ -15,69 +15,345 @@ The tool uses Signpost OAuth library. For more information on OAuth refer [http:
 
 The list of request's below can give you an idea on how to form a JSON request
 
-CreateFolder_request=CreateFolder,[{"name":"TestFolder"}]
-GetUserData_request=GetUserData,[{}]
-RemoveFolder_request=RemoveFolder,[{"fid":"TestFolder"}]
+    CreateFolder_request={
+	  "method": CreateFolder,
+	  "params": [
+	    {
+	      "name": "TestFolder"
+	    }
+	  ]
+	}<br>
+	
+    GetUserData_request={
+	  "method": GetUserData,
+	  "params": [
+	    {
+   		}
+	  ]
+	}<br>
+    
+    RemoveFolder_request={
+	  "method": RemoveFolder,
+	  "params": [
+	    {
+	      "fid": "TestFolder"
+	    }
+	  ]
+	}<br>
 
-sendmessage.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test@yahoo.com",
-"name":"SendMessage Test User"},"from":{"email":"ctest@yahoo.com","name":"SendMessage Test User"},"replyto":
-{"email":"test@yahoo.com","name":"SendMessage Test User"},"inreplyto":"SendMessage InReplyTo Value",
-"mailer":"YahooMailRC","subject":"Message with Stationery","simplebody":{"text":"Let it snow\\n",
-"html":"your html page"}}}]}
+    
+    listfolders.request={
+	  "method": "ListFolders",
+	  "params": [
+	    {
 
-listfolders.request={"method":"ListFolders","params":[{}]}
+	    }
+	  ]
+	}
 
-listmessages.request={"method":"ListMessages","params":[{"fid":"Inbox","numInfo":25,"numMid":25,"sortKey":"date","sortOrder":"up",<br>
-"groupBy":"unRead"}]}
+    sendmessage.request={
+	  "method": "SendMessage",
+	  "params": [
+	    {
+	      "savecopy": true,
+	      "message": {
+	        "to": {
+	          "email": "test@yahoo.com",
+	          "name": "SendMessage Test User"
+	        },
+	        "from": {
+	          "email": "ctest@yahoo.com",
+	          "name": "SendMessage Test User"
+	        },
+	        "replyto": {
+	          "email": "test@yahoo.com",
+	          "name": "SendMessage Test User"
+	        },
+	        "inreplyto": "SendMessage InReplyTo Value",
+	        "mailer": "YahooMailRC",
+	        "subject": "Message with Stationery",
+	        "simplebody": {
+	          "text": "Let it snow\\n",
+	          "html": "your html page"
+	        }
+	      }
+	    }
+	  ]
+	}<br>
 
-flagmessages.request={"method":"FlagMessages","params":[{"fid":"Inbox","selection":{},"setFlags":{"read":1}}]}
+    listmessages.request={
+	  "method": "ListMessages",
+	  "params": [
+	    {
+	      "fid": "Inbox",
+	      "numInfo": 25,
+	      "numMid": 25,
+	      "sortKey": "date",
+	      "sortOrder": "up",
+	      "groupBy": "unRead"
+	    }
+	  ]
+	}<br>
 
-movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"Inbox","destinationFid":"perfTestFolder","selection":{}}]}
+    flagmessages.request={
+	  "method": "FlagMessages",
+	  "params": [
+	    {
+	      "fid": "Inbox",
+	      "selection": {
 
-movemessages.request={"method":"MoveMessages","params":[{"sourceFid":"perfTestFolder","destinationFid":"Inbox","selection":{}}]}
+	      },
+	      "setFlags": {
+	        "read": 1
+	      }
+	    }
+	  ]
+	}<br>
 
-savemessage.request={"method":"SaveMessage","params":[{"destination":{"fid":"Inbox"},"message":{"to":{"email":"test34@yahoo.com",<br>
-"name":"SaveMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SaveMessage Test User"},"replyto":{"email":"test34@yahoo.com",<br>
-"name":"SaveMessage Test User"},"inreplyto":"SaveMessage InReplyTo Value","subject":"SaveMessage Folder Test",
-"body":{"data":"This is a test.","type":"text","subtype":"html","charset":"us-ascii"}}}]}
+    movemessages.request={
+	  "method": "MoveMessages",
+	  "params": [
+	    {
+	      "sourceFid": "Inbox",
+	      "destinationFid": "perfTestFolder",
+	      "selection": {
 
-getmessage.request={"method":"GetMessage","params":[{"fid":"Inbox","message":[{"blockImages":"none","mid":"1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_303_AKSCiGIAAMX7SxWTUAy1l2Krl1M","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_584_AKSCiGIAAMzCSxWTUQKjHTG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_865_AKSCiGIAAMk7SxWTUQcOHjG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1146_AKSCiGIAAMk8SxWTUQt\\\/NjG7Hp0","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1427_AKSCiGIAAMXtSxWTUgE+2UoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1708_AKSCiGIAAMX9SxWTUgVfXUoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_1989_AKSCiGIAANdWSxWTUgpuIkoJZ40","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_2270_AKSCiGIAAMX3SxWTUwA53nzIkbs","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true},{"blockImages":"none","mid":"1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY","expandCIDReferences":true,"enableWarnings":true,"restrictCSS":true}]}]}
+	      }
+	    }
+	  ]
+	}
 
-renamefolder.request={"method":"RenameFolder","params":[{"fid":"perfTestFolder","name":"RenamedPerfTestFolder"}]}
+    movemessages.request={
+	  "method": "MoveMessages",
+	  "params": [
+	    {
+	      "sourceFid": "perfTestFolder",
+	      "destinationFid": "Inbox",
+	      "selection": {
 
-emptyfolder.request={"method":"EmptyFolder","params":[{"fid":"test"}]}
+	      }
+	    }
+	  ]
+	}
 
-deletemessages.request={"method":"DeleteMessages","params":[{"fid":"TestFolder","selection":{}}]}
+    savemessage.request={
+	  "method": "SaveMessage",
+	  "params": [
+	    {
+	      "destination": {
+	        "fid": "Inbox"
+	      },
+	      "message": {
+	        "to": {
+	          "email": "test34@yahoo.com",
+	          "name": "SaveMessage Test User"
+	        },
+	        "from": {
+	          "email": "ctest34@yahoo.com",
+	          "name": "SaveMessage Test User"
+	        },
+	        "replyto": {
+	          "email": "test34@yahoo.com",
+	          "name": "SaveMessage Test User"
+	        },
+	        "inreplyto": "SaveMessage InReplyTo Value",
+	        "subject": "SaveMessage Folder Test",
+	        "body": {
+	          "data": "This is a test.",
+	          "type": "text",
+	          "subtype": "html",
+	          "charset": "us-ascii"
+	        }
+	      }
+	    }
+	  ]
+	}
+	
+	
+    getmessage.request={
+	  "method": "GetMessage",
+	  "params": [
+	    {
+	      "fid": "Inbox",
+	      "message": [
+	        {
+	          "blockImages": "none",
+	          "mid": "1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M",
+	          "expandCIDReferences": true,
+	          "enableWarnings": true,
+	          "restrictCSS": true
+	        },
+	        {
+	          "blockImages": "none",
+	          "mid": "1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY",
+	          "expandCIDReferences": true,
+	          "enableWarnings": true,
+	          "restrictCSS": true
+	        }
+	      ]
+	    }
+	  ]
+	}
 
-getmessagerawheader.request={"method":"GetMessageRawHeader","params":[{"fid":"Inbox","mid":["1_22_AKSCiGIAAMy\\\/SxWTUAgxY2Krl1M",
-"1_1989_AKSCiGIAANdWSxWTUgpuIkoJZ40","1_2270_AKSCiGIAAMX3SxWTUwA53nzIkbs","1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZtY"]}]}
+    renamefolder.request={
+	  "method": "RenameFolder",
+	  "params": [
+	    {
+	      "fid": "perfTestFolder",
+	      "name": "RenamedPerfTestFolder"
+	    }
+	  ]
+	}
 
-searchmessages.request={"method":"SearchMessages","params":[{"search":{"fid":"Inbox","query":"the"},"numInfo":2000,"numMid":2000,"sortKey":"date","sortOrder":"up"}]}
+    emptyfolder.request={
+	  "method": "EmptyFolder",
+	  "params": [
+	    {
+	      "fid": "test"
+	    }
+	  ]
+	}
 
-setuserdata.request={"method":"SetUserData","params":[{"setdata":{"userUIPref":{"defaultSortOrder":"up","useRichText":"dynamic"},"userSendPref":{"showCcBcc":"show"}}}]}
+    deletemessages.request={
+	  "method": "DeleteMessages",
+	  "params": [
+	    {
+	      "fid": "TestFolder",
+	      "mid": [
+	        "1_22_AKSCiGIAAMy/SxWTUAgxY2Krl1M",
+	        "1_1989_AKSCiGIAANdWSxWTUgpuIkomK"
+	      ]
+	    }
+	  ]
+	}
+	
+    getmessagerawheader.request={
+	  "method": "GetMessageRawHeader",
+	  "params": [
+	    {
+	      "fid": "Inbox",
+	      "mid": [
+	        "1_22_AKSCiGIAAMy/SxWTUAgxY2Krl1M",
+	        "1_2551_AKSCiGIAAMXrSxWTUwTGfiCiZ"
+	      ]
+	    }
+	  ]
+	}
 
-batchexecute.request={"method":"BatchExecute","params":[{"call":[{"GetUserData":{}},{"ListMessages":{"fid":"Inbox","startInfo":0,"startMid":0,"numInfo":50,"numMid":50,"sortKey":"date","sortOrder":"down","verifyInAddressBook":1,"filterBy":[{"isRead":1}]}},{"GetMboxColoMigrate":{"loginip":"207.126.231.85"}},{"GetMetaData":{}},{"ListFolders":{"resetMessengerUnseen":1}}]}]}
+    searchmessages.request={
+	  "method": "SearchMessages",
+	  "params": [
+	    {
+	      "search": {
+	        "fid": "Inbox",
+	        "query": "the"
+	      },
+	      "numInfo": 2000,
+	      "numMid": 2000,
+	      "sortKey": "date",
+	      "sortOrder": "up"
+	    }
+	  ]
+	}
 
-sendmessageattachment.request={"method":"SendMessage","params":[{"savecopy":true,"message":{"to":{"email":"test34@yahoo.com",<br>
-"name":"SendMessage Test User"},"from":{"email":"ctest34@yahoo.com","name":"SendMessage Attach Test User"},<br>
-"replyto":{"email":"test34@yahoo.com", "name":"SendMessage Attach Test User"},"mailer":"YahooMailRC\\\/MailBeta YahooMailWebService\\\/V1",<br>
-"simplebody":{"text":"SendMessage with message with one attachment FILENAME", "attachment":[{"attachment":"upload:\\\/\\\/XXXXXXXXXX"}]},<br>
-"subject":"SendMessage with an attachment"}}]}
+
+    setuserdata.request={
+	  "method": "SetUserData",
+	  "params": [
+	    {
+	      "setdata": {
+	        "userUIPref": {
+	          "defaultSortOrder": "up",
+	          "useRichText": "dynamic"
+	        },
+	        "userSendPref": {
+	          "showCcBcc": "show"
+	        }
+	      }
+	    }
+	  ]
+	}
+
+    batchexecute.request={
+	  "method": "BatchExecute",
+	  "params": [
+	    {
+	      "call": [
+	        {
+	          "GetUserData": {
+
+	          }
+	        },
+	        {
+	          "ListMessages": {
+	            "fid": "Inbox",
+	            "startInfo": 0,
+	            "startMid": 0,
+	            "numInfo": 50,
+	            "numMid": 50,
+	            "sortKey": "date",
+	            "sortOrder": "down",
+	            "verifyInAddressBook": 1,
+	            "filterBy": [
+	              {
+	                "isRead": 1
+	              }
+	            ]
+	          }
+	        },
+	        {
+	          "ListFolders": {
+	            "resetMessengerUnseen": 1
+	          }
+	        }
+	      ]
+	    }
+	  ]
+	}
+
+    sendmessageattachment.request={
+	  "method": "SendMessage",
+	  "params": [
+	    {
+	      "savecopy": true,
+	      "message": {
+	        "to": {
+	          "email": "test34@yahoo.com",
+	          "name": "SendMessage TestUser"
+	        },
+	        "from": {
+	          "email": "ctest34@yahoo.com",
+	          "name": "SendMessage Attach Test User"
+	        },
+	        "replyto": {
+	          "email": "test34@yahoo.com",
+	          "name": "SendMessage Attach Test User"
+	        },
+	        "mailer": "YahooMailRC\\\/MailBeta YahooMailWebService\\\/V1",
+	        "simplebody": {
+	          "text": "SendMessage with message with one attachment FILENAME",
+	          "attachment": [
+	            {
+	              "attachment": "upload:\\\/\\\/XXXXXXXXXX"
+	            }
+	          ]
+	        },
+	        "subject": "SendMessage with an attachment"
+	      }
+	    }
+	  ]
+	}
+
+
 
 #Note on Licenses
 
-The libraries used in the sample has its own license policies. Please refer the respective libraries home page for the same. I am in no way responsible for anything related to your usage of this tool. I also recommend creating a test yahoo account which you can use when building/ testing your systems using these APIs or while using this tool.
-
-#What's coming
-
-1. Java Client Library for YMail API's
-2. A complete Ymail UI built using these API's
+The libraries (jar and external java code) used in this sample has its own license policies. Please refer the respective libraries home page for the same and for the rest please refer the LICENSE file. 
 
 
 
 
 
- 
   
  
  
