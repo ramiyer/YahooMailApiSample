@@ -344,6 +344,34 @@ The list of request's below can give you an idea on how to form a JSON request
 	  ]
 	}
 
+sendmessageattachment2.request= {
+	"method": "SendMessage",
+	"params": 
+	[{
+		"savecopy": true,
+		"message": {
+			"to": {
+				"email": "test1@yahoo.com",
+				"name": "Test User"
+			},
+			"from": {
+				"email": "test1@yahoo.com",
+				"name": "Test User"
+			},
+			"replyto": {
+				"email": "test1@yahoo.com",
+				"name": "Test User"
+			},	
+			"simplebody": {
+				"text": "Send Message",
+				"attachment": {
+					"attachment": "message:\/\/SendForwardTest\/1_232_AJfPjkQAAUYoTVm2CQ80Z0bD1qI"
+				}
+			},
+			"subject": "Test Message for YDN - Attach message"
+		}
+	}]
+}
 
 
 #Note on Licenses
