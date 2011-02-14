@@ -344,7 +344,7 @@ The list of request's below can give you an idea on how to form a JSON request
 	  ]
 	}
 
-sendmessageattachment2.request= {
+    sendmessageattachment2.request= {
 	"method": "SendMessage",
 	"params": 
 	[{
@@ -371,7 +371,7 @@ sendmessageattachment2.request= {
 			"subject": "Test Message for YDN - Attach message"
 		}
 	}]
-}
+    }
 
 
 #Note on Licenses
